@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sistema de multas</h1>
+    <input type="number" name="vel" id="vel"> Km/h 
+
+    <input type="button" value="Verificar" onclick="calv()">
+
+    <div id="res"></div>
+
+    <script>
+        function calv(){
+            var tv = document.getElementById('vel')
+            var res = document.getElementById('res')
+            var velo = Number(tv.value)
+            res.innerHTML = `<p>sua velocidade atual e de ${velo}Km/h</p>`
+            if(velo > 60){
+                res.innerHTML += `<p>voce esta multado por excesso de velocidade</p>`
+            }
+
+            res.innerHTML += `<p>dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>

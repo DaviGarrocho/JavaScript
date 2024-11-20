@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho ai ô</title>
+</head>
+<body>
+
+    <h1>oque e voce no Brasil?</h1>
+
+    <input type="text" name="p" id="p">
+    <input type="button" value="enviar" onclick="en()">
+    <div id="res"></div>
+    <script>
+        function en(){
+            var p = document.getElementById('p').value.toLowerCase()
+            var res = document.getElementById('res')
+            if(p == "brasil" || "brazil"){
+                res.innerHTML = ('<p>Voce e Brasileiro!</p>')
+            }else{
+                res.innerHTML = ('<p>Voce e Estrangeiro!</p>')
+            }
+
+        }
+        
+        
+    </script>
+
+</body>
+</html>
