@@ -14,9 +14,13 @@ section{
     width: 500px;
     height: 250px;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 3px 3px 4px #00000080;
+}
 
+section >div#form{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 footer{
     color: white;

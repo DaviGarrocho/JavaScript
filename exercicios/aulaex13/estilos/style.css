@@ -18,7 +18,9 @@ section{
     box-shadow: 3px 3px 4px #00000080;
 
 }
-
+p#con{
+    text-align: center;
+}
 footer{
     color: white;
     text-align: center;
